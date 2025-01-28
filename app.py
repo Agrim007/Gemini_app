@@ -9,9 +9,6 @@ load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=api_key)
 
-#os.environ["GOOGLE_API_KEY"] = "AIzaSyB4xZnF9TMTTwrRye6qdDd-srGb7-O38DA"
-#genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-
 # Initialize the model
 model = genai.GenerativeModel("models/gemini-pro")
 
